@@ -120,7 +120,7 @@ if __name__ == '__main__':
                         res = work(genius, dir_path, filename)
                         if res is Status.SUCCEED:
                             songs_succeed += 1
-                        elif res is Status.SKIPPED:  # res could be None if the file isn't music file
+                        elif res is Status.SKIPPED:
                             songs_skipped += 1
                         elif res is Status.NO_LYRICS_FOUND:
                             songs_failed += 1
